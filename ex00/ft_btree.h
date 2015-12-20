@@ -6,7 +6,7 @@
 /*   By: bchaleil <bchaleil@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/18 17:06:00 by bchaleil          #+#    #+#             */
-/*   Updated: 2015/12/18 17:16:35 by bchaleil         ###   ########.fr       */
+/*   Updated: 2015/12/20 12:01:24 by bchaleil         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,13 @@
 
 # include <stdlib.h>
 
-typedef	struct	s_btree
+typedef struct		s_btree
 {
-	struct	s_btree	*left;
-	struct	s_btree	*right;
+	struct s_btree	*left;
+	struct s_btree	*right;
 	void			*item;
 }					t_btree;
 
-t_btree	*btree_create_node(void	*item);
+t_btree				*btree_create_node(void	*item);
 
 #endif
